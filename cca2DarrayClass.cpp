@@ -9,6 +9,13 @@ By default, the main application will use the heap memory. That can be changed i
 #include "olcPixelGameEngine.h"
 #include <stdlib.h>
 
+// MODIFY THESE CONSTANTS TO CHANGE THE ACTIVE RULE ///////
+#define RANGE 6
+#define THRESHOLD 7
+#define COLORS 18
+#define NH false    // true for Moore, false for vonNeumann
+///////////////////////////////////////////////////////////
+
 #define TOT_SIZE 580
 #define INNER_SIZE 540
 #define MARGIN 15
@@ -80,10 +87,10 @@ public:
 class CCA : public olc::PixelGameEngine
 {
 private:
-	int range = 6;
-	int threshold = 7;
-	int colorNumber = 18;
-	bool moore = false;
+	int range = RANGE;
+	int threshold = THRESHOLD;
+	int colorNumber = COLORS;
+	bool moore = NH;
 	std::vector<Color> colorPalette = {};
     int successorIndex;
 	static const int margin = MARGIN;
