@@ -10,9 +10,9 @@ By default, the main application will use the heap memory. That can be changed i
 #include <stdlib.h>
 
 // MODIFY THESE CONSTANTS TO CHANGE THE ACTIVE RULE ///////
-#define RANGE 6
-#define THRESHOLD 7
-#define COLORS 18
+#define RANGE 1
+#define THRESHOLD 1
+#define COLORS 12
 #define NH false    // true for Moore, false for vonNeumann
 ///////////////////////////////////////////////////////////
 
